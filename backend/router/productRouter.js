@@ -9,7 +9,7 @@ import {
 const productRouter = express.Router();
 
 productRouter.get("/", getAllProducts);
-productRouter.post("/add-product", addProduct);
+productRouter.put("/add-product", addProduct);
 productRouter.delete("/:id", removeProduct);
 productRouter.get("/:product_id", getProduct);
 export default productRouter;
